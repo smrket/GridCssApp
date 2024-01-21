@@ -1,0 +1,18 @@
+.container{
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+  /*grid-template-rows: 200px 200px ;*/
+  /* grid-template-rows: repeat(2,200px) ; */
+  grid-auto-rows: minmax(200px,auto);
+
+
+
+}
+
+.box{
+  background: blue;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
