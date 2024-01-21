@@ -1,0 +1,62 @@
+.container{
+  display: grid;
+  grid-auto-rows: minmax(150px,auto);
+
+  grid-template-areas:
+  "head head head head head"
+  "sl sl nav nav nav"
+  "sl sl cont cont cont"
+  "sl sl cont cont cont"
+  "sl sl cont cont cont"
+  "foot foot foot foot foot"
+  ;
+
+  grid-gap: 10px;
+
+
+}
+
+
+.box{
+  background: #aaa;
+  color: #fff;
+  text-align: center;
+}
+
+.head{
+  grid-area: head;
+}
+.nav{
+  grid-area: nav;
+}
+.sidelef{
+  grid-area: sl;
+}
+.content{
+  grid-area: cont;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+}
+.footer{
+  grid-area: foot;
+}
+
+
+
+
+
+p{
+  background-color: lightgreen;
+  text-align: center;
+  margin:auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+a {
+  margin:5px;
+  font-size: 1.5rem;
+  color: black;
+}
